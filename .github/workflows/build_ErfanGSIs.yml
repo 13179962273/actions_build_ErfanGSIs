@@ -60,7 +60,7 @@ jobs:
               mkdir final
               7z a -t7z -r final/GSI_AB.7z ErfanGSIs/output/*AB*
 
-        - name: Upload GSI_AB to WeTransfer
+       . name: Upload GSI_AB to WeTransfer
          run: |
               curl -sL https://git.io/file-transfer | sh
               ./transfer wet final/GSI_AB.7z
